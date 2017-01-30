@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- 
+	test: "https://test.salesforce.com"
+	prod: "https://login.salesforce.com"
+	user: "devstaging@basicgov.com.bgqa"
+	pass: "BaGov016"
+ -->
+<suite name="Page Object test example">
+<parameter name="appURL" value="https://test.salesforce.com/"/>
+<parameter name="browserType" value="chrome"/>
+<parameter name="username" value="devstaging@basicgov.com.bgqa"/>
+<parameter name="password" value="BaGov016"/>
+<parameter name="contactName" value="Smith"/>
+  <test name="My First Test">
+    <classes>
+      <class name="com.pack.common.tests.MyFirstTestClass"/>
+    </classes>
+  </test>
+</suite>
